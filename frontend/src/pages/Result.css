@@ -1,0 +1,161 @@
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 1rem;
+}
+
+.result-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.result-card h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.topic-info {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.topic-info h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.topic-info p {
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+.vote-results {
+  margin-bottom: 2rem;
+}
+
+.result-summary {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #e3f2fd;
+  border-radius: 4px;
+}
+
+.result-summary h4 {
+  margin: 0;
+  color: #1976d2;
+  font-size: 1.2rem;
+}
+
+.result-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.result-item {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.result-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.result-label span:first-child {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.result-label span:last-child {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.yes-fill {
+  background-color: #28a745;
+}
+
+.no-fill {
+  background-color: #dc3545;
+}
+
+.result-winner {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #d4edda;
+  border-radius: 4px;
+}
+
+.result-winner h4 {
+  margin: 0;
+  color: #155724;
+  font-size: 1.2rem;
+}
+
+.result-actions {
+  text-align: center;
+}
+
+.back-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  font-size: 1.1rem;
+  color: #666;
+} 
