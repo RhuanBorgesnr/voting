@@ -1,6 +1,5 @@
 # Voting
 
-Sistema de votação digital com frontend em React e backend em Django REST Framework.
 
 ## Como iniciar
 
