@@ -35,4 +35,35 @@ Para criar um usuário admin, execute:
 ```bash
 docker-compose exec backend python manage.py createsuperuser
 ```
+
+## CI/CD Pipeline
+
+O projeto possui um pipeline completo de CI/CD implementado com GitHub Actions:
+
+### Workflows Disponíveis
+
+- **CI**: Executa testes e validações em push/PR
+- **CD Staging**: Deploy automático para staging
+- **CD Production**: Deploy manual para produção
+- **Dependency Update**: Atualização automática de dependências
+
+### Configuração
+
+1. Configure os secrets no GitHub:
+   - `DOCKER_USERNAME`: Usuário do Docker Hub
+   - `DOCKER_PASSWORD`: Senha do Docker Hub
+
+2. Para mais detalhes, consulte [docs/CI-CD.md](docs/CI-CD.md)
+
+### Desenvolvimento
+
+```bash
+# Testes locais
+cd api && python manage.py test
+cd frontend && npm test
+
+# Linting
+cd api && flake8 . && black . && isort .
+cd frontend && npm run lint
+```
 ```
